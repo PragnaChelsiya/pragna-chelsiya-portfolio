@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Duddu Pragna Chelsiya - BCA student at Alliance University specializing in AI, Data Analytics, and Full-Stack Development. Explore projects, technical skills, certifications, and research.">
+  <meta name="keywords" content="Duddu Pragna Chelsiya, Portfolio, Alliance University, BCA, AI, Full Stack Developer, Generative AI, React, Node.js, Python, Tableau">
+  <meta name="author" content="Duddu Pragna Chelsiya">
+  
+  <title>Duddu Pragna Chelsiya | AI, Data & Full-Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Header & Navigation Bar
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+      <a href="#home" class="brand-logo" aria-label="Duddu Pragna Chelsiya Home">
+        <div class="brand-badge">DP</div>
+        <span class="brand-text-name">Pragna Chelsiya</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="desktop-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume-nav" aria-label="Download Resume PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Resume
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link active">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#certifications" class="mobile-nav-link">Certifications</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#research" class="mobile-nav-link">Research</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Resume
+      </a>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <main>
+    <!-- ======================================================================
+         Hero Section
+         ====================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left: Hero Text & Actions -->
+          <div class="hero-content reveal">
+            <!-- Top Tagline / Small text -->
+            <div class="hero-top-badge">
+              <span class="status-dot"></span>
+              <span>Alliance University · BCA</span>
+            </div>
+
+            <!-- Exact Main Heading -->
+            <h1 class="hero-heading">
+              Hi, I'm <span class="text-gradient">Duddu Pragna Chelsiya</span>
+            </h1>
+
+            <!-- Exact Tagline -->
+            <p class="hero-tagline">
+              Building practical solutions through AI, data, and full-stack development, with a passion for learning, creating, and continuously improving.
+            </p>
+
+            <!-- Two Primary Buttons -->
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary" id="btn-view-projects">
+                View My Projects
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="assets/resume.pdf" download="Duddu_Pragna_Chelsiya_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-download-resume">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Resume
+              </a>
+            </div>
+
+            <!-- Verified Social Profiles -->
+            <div class="hero-socials" id="hero-socials-container">
+              <!-- Rendered dynamically by app.js / verified static fallbacks below -->
+              <a href="https://github.com/PragnaChelsiya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub: PragnaChelsiya" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/duddu-pragna-chelsiya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn: duddu-pragna-chelsiya" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+
+              <a href="https://leetcode.com/u/DPragnaChelsiya/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode: DPragnaChelsiya" aria-label="LeetCode Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 .571.996 5.64 5.64 0 0 0 4.148 2.278c.433.023.864-.016 1.282-.116a5.617 5.617 0 0 0 2.29-1.222l7.74-7.74a1.374 1.374 0 0 0 0-1.943l-3.317-3.317A1.374 1.374 0 0 0 13.483 0zm-.961 4.707l2.356 2.356-6.779 6.779a2.868 2.868 0 0 1-1.168.623 2.808 2.808 0 0 1-1.463-.049 2.87 2.87 0 0 1-1.411-.902 2.946 2.946 0 0 1-.58-1.574 2.84 2.84 0 0 1 .632-1.637l6.779-6.779 1.634 1.183z"/>
+                </svg>
+              </a>
+
+              <a href="https://www.hackerrank.com/profile/pragnachelsiyad1" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="HackerRank: pragnachelsiyad1" aria-label="HackerRank Profile">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0zm3.834 14.862h-1.895v-2.02h-3.878v2.02H8.166V9.138h1.895v2.02h3.878v-2.02h1.895z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Profile Photo Container -->
+          <div class="hero-visual reveal">
+            <div class="photo-card-wrapper">
+              <div class="photo-glow-bg"></div>
+              <div class="photo-card">
+                <img src="assets/images/profile.jpg" alt="Duddu Pragna Chelsiya - Software Developer" loading="eager" width="380" height="440">
+                <div class="photo-badge-floating">
+                  <div class="photo-badge-info">
+                    <h4>Duddu Pragna Chelsiya</h4>
+                    <p>BCA Scholar & Developer</p>
+                  </div>
+                  <span class="verified-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    Alliance Univ
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Highlights Area (Strictly Verified Data) -->
+        <div class="hero-highlights-strip reveal" id="hero-highlights-strip">
+          <div class="highlight-item">
+            <span class="highlight-label">Degree</span>
+            <span class="highlight-value">BCA (UG)</span>
+            <span class="highlight-detail">Alliance University, Bangalore</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Academic Score</span>
+            <span class="highlight-value">83.7%</span>
+            <span class="highlight-detail">Graduation: 2024 – 2027</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Core Focus</span>
+            <span class="highlight-value">AI & Full-Stack</span>
+            <span class="highlight-detail">Generative AI, React, Node.js</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Analytics & Tools</span>
+            <span class="highlight-value">Data & BI</span>
+            <span class="highlight-detail">Tableau, Power BI, SQL, Python</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         About Me Section
+         ====================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Profile Overview</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-subtitle">A synthesis of academic excellence, technological curiosity, and hands-on software development.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-card reveal">
+            <p>
+              I am a Bachelor of Computer Applications (BCA) student at <strong>Alliance University, Bangalore</strong> (2024–2027) with an academic record of <strong>83.7%</strong>. I possess a strong foundation in modern software engineering, web architectures, relational and NoSQL databases, and practical Generative AI systems.
+            </p>
+            <p>
+              My journey centers on building practical, scalable software solutions. From architecting <em>TrustCart</em>, an Agentic AI shopping assistant with transparent confidence scoring, to developing <em>Campus-Cart</em>, a full-stack campus e-commerce platform deployed on Netlify and Render, I apply an analytical approach to every layer of software development.
+            </p>
+            <p>
+              Alongside engineering, I have authored research on the <em>"Agile Development Model: Principles, Practices, and Modern Software Engineering Trends"</em> and executed data-driven sustainability projects utilizing Tableau Public through the 1M1B Green Internship (AICTE + Salesforce + SEMI). I am driven by continuous learning and eager to bring engineering excellence to innovative teams.
+            </p>
+          </div>
+
+          <div class="about-highlights-grid reveal">
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h4>Alliance University</h4>
+                <p>Bachelor of Computer Applications (83.7%)</p>
+              </div>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h4>9+ Certifications</h4>
+                <p>DeepLearning.AI, IBM, Cisco, Amazon, UiPath</p>
+              </div>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h4>Research Author</h4>
+                <p>Agile Development Models & Software Trends</p>
+              </div>
+            </div>
+
+            <div class="about-stat-card">
+              <div class="stat-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6l4 2"></path>
+                </svg>
+              </div>
+              <div class="stat-content">
+                <h4>Green Intern (AICTE + Salesforce)</h4>
+                <p>Community Waterbody Clean-Up & Analytics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         Technical Skills Section
+         ====================================================================== -->
+    <section class="section" id="skills" style="background: rgba(15, 23, 42, 0.3);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
+          <p class="section-subtitle">Verified programming languages, web technologies, databases, and analytics tools from my technical portfolio.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-grid-container">
+          <!-- Rendered dynamically by app.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         Projects Showcase Section
+         ====================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Project <span class="text-gradient">Showcase</span></h2>
+          <p class="section-subtitle">Practical applications engineered with AI decision transparency, full-stack scalability, and data visualization.</p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid-container">
+          <!-- Rendered dynamically by app.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         Experience & Internship Section
+         ====================================================================== -->
+    <section class="section" id="experience" style="background: rgba(15, 23, 42, 0.3);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Industry Experience</span>
+          <h2 class="section-title">Work & <span class="text-gradient">Internship</span></h2>
+          <p class="section-subtitle">Hands-on experience in community data analytics, stakeholder coordination, and environmental sustainability.</p>
+        </div>
+
+        <div class="experience-timeline" id="experience-container">
+          <!-- Rendered dynamically by app.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         Certifications Section
+         ====================================================================== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Verified Credentials</span>
+          <h2 class="section-title">Licenses & <span class="text-gradient">Certifications</span></h2>
+          <p class="section-subtitle">Industry-recognized coursework and certifications in AI, NLP, Cloud, Software Engineering, and Security.</p>
+        </div>
+
+        <div class="certifications-grid" id="certifications-grid-container">
+          <!-- Rendered dynamically by app.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         Education Section
+         ====================================================================== -->
+    <section class="section" id="education" style="background: rgba(15, 23, 42, 0.3);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education <span class="text-gradient">Timeline</span></h2>
+          <p class="section-subtitle">Formal education milestones and verified academic performance records.</p>
+        </div>
+
+        <div class="education-grid" id="education-grid-container">
+          <!-- Rendered dynamically by app.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         Research & Publications Section
+         ====================================================================== -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Scholarly Work</span>
+          <h2 class="section-title">Research & <span class="text-gradient">Publications</span></h2>
+          <p class="section-subtitle">In-depth research on software engineering frameworks, Agile dynamics, and modern development paradigms.</p>
+        </div>
+
+        <div id="research-container">
+          <!-- Rendered dynamically by app.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================================
+         Contact Section
+         ====================================================================== -->
+    <section class="section" id="contact" style="background: rgba(10, 15, 29, 0.95);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's <span class="text-gradient">Connect</span></h2>
+          <p class="section-subtitle">Open to internships, software engineering roles, collaborative research, and professional opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info & Channels -->
+          <div class="contact-info-card reveal">
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Primary Email</h4>
+                <a href="mailto:pragnachelsiyaduddu@gmail.com" class="contact-link" id="contact-email">pragnachelsiyaduddu@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>University Email</h4>
+                <a href="mailto:pdudduBCA24@ced.alliance.edu.in" class="contact-link">pdudduBCA24@ced.alliance.edu.in</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Direct Phone</h4>
+                <a href="tel:9032006411" class="contact-link">+91 9032006411</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <h4>Location & Institution</h4>
+                <span style="color: var(--text-primary); font-weight: 500; font-size: 1rem;">Alliance University, Bangalore, India</span>
+              </div>
+            </div>
+
+            <!-- Social Links inside contact -->
+            <div style="padding-top: 14px; border-top: 1px solid var(--border-light);">
+              <h4 style="font-size: 0.82rem; font-weight: 600; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;">Verified Profiles</h4>
+              <div class="hero-socials">
+                <a href="https://github.com/PragnaChelsiya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/duddu-pragna-chelsiya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a href="https://leetcode.com/u/DPragnaChelsiya/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LeetCode" aria-label="LeetCode">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 .571.996 5.64 5.64 0 0 0 4.148 2.278c.433.023.864-.016 1.282-.116a5.617 5.617 0 0 0 2.29-1.222l7.74-7.74a1.374 1.374 0 0 0 0-1.943l-3.317-3.317A1.374 1.374 0 0 0 13.483 0zm-.961 4.707l2.356 2.356-6.779 6.779a2.868 2.868 0 0 1-1.168.623 2.808 2.808 0 0 1-1.463-.049 2.87 2.87 0 0 1-1.411-.902 2.946 2.946 0 0 1-.58-1.574 2.84 2.84 0 0 1 .632-1.637l6.779-6.779 1.634 1.183z"/>
+                  </svg>
+                </a>
+                <a href="https://www.hackerrank.com/profile/pragnachelsiyad1" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="HackerRank" aria-label="HackerRank">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0a12 12 0 1 0 12 12A12.013 12.013 0 0 0 12 0zm3.834 14.862h-1.895v-2.02h-3.878v2.02H8.166V9.138h1.895v2.02h3.878v-2.02h1.895z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Box -->
+          <div class="contact-form-card reveal">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email Address</label>
+                <input type="email" id="form-email" class="form-control" placeholder="e.g. name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" class="form-control" placeholder="Opportunity / Project Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Message Directly
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2026 Duddu Pragna Chelsiya. Built with verified credentials & clean code.</p>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Alliance University · Bachelor of Computer Applications (UG)</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/PragnaChelsiya" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);" title="GitHub">GitHub</a>
+        <span style="color: var(--border-light);">•</span>
+        <a href="https://www.linkedin.com/in/duddu-pragna-chelsiya" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);" title="LinkedIn">LinkedIn</a>
+        <span style="color: var(--border-light);">•</span>
+        <a href="https://leetcode.com/u/DPragnaChelsiya/" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);" title="LeetCode">LeetCode</a>
+        <span style="color: var(--border-light);">•</span>
+        <a href="https://www.hackerrank.com/profile/pragnachelsiyad1" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary);" title="HackerRank">HackerRank</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-message"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
