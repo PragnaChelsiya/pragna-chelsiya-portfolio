@@ -27,9 +27,9 @@ const PORTFOLIO_DATA = {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/duddu-pragna-chelsiya",
+      url: "https://www.linkedin.com/in/duddu-pragna-chelsiya-a24257333/",
       icon: "linkedin",
-      label: "linkedin.com/in/duddu-pragna-chelsiya"
+      label: "linkedin.com/in/duddu-pragna-chelsiya-a24257333"
     },
     {
       name: "LeetCode",
@@ -162,7 +162,8 @@ const PORTFOLIO_DATA = {
         "Executed stakeholder engagement drives, demographic & environmental surveys, and public awareness campaigns.",
         "Designed and published Tableau data dashboards to visualize water quality challenges and track restoration milestones."
       ],
-      technologies: ["Tableau", "Data Analysis", "Stakeholder Engagement", "Survey Analytics", "Environmental Science"]
+      technologies: ["Tableau", "Data Analysis", "Stakeholder Engagement", "Survey Analytics", "Environmental Science"],
+      certificateUrl: "https://drive.google.com/file/d/1_Al3yfcrmyGeRZEIYlAJpFIFc8inSKYZ/view?usp=drive_link"
     }
   ],
 

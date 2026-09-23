@@ -127,32 +127,44 @@ function initExperience() {
   const container = document.getElementById('experience-container');
   if (!container || !PORTFOLIO_DATA.experience) return;
 
-  container.innerHTML = PORTFOLIO_DATA.experience.map(exp => `
-    <div class="experience-card reveal">
-      <div class="exp-header">
-        <div class="exp-role-info">
-          <h3>${exp.role}</h3>
-          <h4>${exp.organization}</h4>
+  container.innerHTML = PORTFOLIO_DATA.experience.map(exp => {
+    const certAction = exp.certificateUrl ? `
+      <a href="${exp.certificateUrl}" target="_blank" rel="noopener noreferrer" class="btn-view-cert" aria-label="View ${exp.role} Certificate">
+        <span>View Certificate</span>
+        ${getIconSvg('externalLink')}
+      </a>
+    ` : '';
+
+    return `
+      <div class="experience-card reveal">
+        <div class="exp-header">
+          <div class="exp-role-info">
+            <h3>${exp.role}</h3>
+            <h4>${exp.organization}</h4>
+          </div>
+          <span class="exp-badge-period">${exp.badge}</span>
         </div>
-        <span class="exp-badge-period">${exp.badge}</span>
+
+        <p class="exp-description">${exp.description}</p>
+
+        <ul class="exp-points-list">
+          ${exp.points.map(pt => `
+            <li>
+              ${getIconSvg('check')}
+              <span>${pt}</span>
+            </li>
+          `).join('')}
+        </ul>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border-light);">
+          <div class="exp-tech-stack" style="padding-top: 0; border-top: none;">
+            ${exp.technologies.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+          </div>
+          ${certAction}
+        </div>
       </div>
-
-      <p class="exp-description">${exp.description}</p>
-
-      <ul class="exp-points-list">
-        ${exp.points.map(pt => `
-          <li>
-            ${getIconSvg('check')}
-            <span>${pt}</span>
-          </li>
-        `).join('')}
-      </ul>
-
-      <div class="exp-tech-stack">
-        ${exp.technologies.map(t => `<span class="tech-tag">${t}</span>`).join('')}
-      </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 /* ==========================================================================
