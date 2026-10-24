@@ -14,7 +14,7 @@ const PORTFOLIO_DATA = {
     displayPhone: "+91 9032006411",
     location: "Bangalore, India",
     photoUrl: "assets/images/profile.jpg",
-    resumeUrl: "assets/resume.pdf",
+    resumeUrl: "assets/Pragna-Chelsiya-Resume.pdf",
     summary: "BCA student at Alliance University, Bangalore with a strong foundation in software development, web technologies, databases, and Generative AI. Proficient in Python, Java, JavaScript, modern web stacks, and data analytics tools like Tableau and Power BI. Experienced in building AI-driven solutions and full-stack applications with an analytical mindset, eager to contribute practical, innovative solutions to high-impact software engineering teams."
   },
 
@@ -98,6 +98,11 @@ const PORTFOLIO_DATA = {
           type: "github",
           label: "GitHub",
           url: "https://github.com/PragnaChelsiya/TrustCart-Agentic-AI"
+        },
+        {
+          type: "demo",
+          label: "Live Demo",
+          url: "https://storied-peony-bc8570.netlify.app/"
         }
       ]
     },
