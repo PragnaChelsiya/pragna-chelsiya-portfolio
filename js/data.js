@@ -133,6 +133,31 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
+      id: "genai-career-navigator",
+      title: "GenAI Career Navigator",
+      subtitle: "AI-Powered Career Guidance & Skill Gap Analysis",
+      category: "Generative AI",
+      badge: "AI & Full-Stack",
+      description: "A web-based career guidance application designed to help students and aspiring professionals prepare for target careers by comparing current skills with role requirements, visualizing skill gaps using radar charts, and supporting personalized roadmaps.",
+      highlights: [
+        "Compares current skills with target role requirements and visualizes potential skill gaps using an interactive radar chart.",
+        "Supports personalized learning roadmaps based on study time, experience level, and learning preferences."
+      ],
+      technologies: ["React", "JavaScript", "HTML", "CSS", "Vite", "Python", "FastAPI", "Groq", "Git", "GitHub", "Vercel", "Render"],
+      links: [
+        {
+          type: "demo",
+          label: "Live Demo",
+          url: "https://gen-ai-career-navigator.vercel.app"
+        },
+        {
+          type: "github",
+          label: "GitHub",
+          url: "https://github.com/sharvani801/GenAI-Career-Navigator"
+        }
+      ]
+    },
+    {
       id: "waterbody-restoration",
       title: "Community Waterbody Clean-Up & Restoration Drive",
       subtitle: "Data-Driven Sustainability Analytics",
